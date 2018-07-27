@@ -61,6 +61,10 @@ $sides: (top, bottom, left, right);
   
   &.is-header {
     font-size: 1.5rem;
+
+    & + .subtitle {
+      margin-top: -.3rem;
+    }
   }
 }
 

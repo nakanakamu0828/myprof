@@ -6,9 +6,12 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <router-link to="/" class="navbar-item">
-                <span class="logo is-header">Nakamu</span>
+              <router-link to="/" class="navbar-item is-block">
+                <div class="logo is-header">Nakamu</div>
+                <div class="subtitle is-size-7"> 世界を旅して暮らしたい放浪エンジニア</div>
               </router-link>
+
+
               <span class="navbar-burger burger" :class="{'is-active': drawer}" @click="drawer = !drawer">
                 <span></span>
                 <span></span>
