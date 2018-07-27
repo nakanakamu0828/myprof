@@ -9,7 +9,7 @@
               <router-link to="/" class="navbar-item">
                 <span class="logo is-header">Nakamu</span>
               </router-link>
-              <span class="navbar-burger burger"  @click="drawer = !drawer">
+              <span class="navbar-burger burger" :class="{'is-active': drawer}" @click="drawer = !drawer">
                 <span></span>
                 <span></span>
                 <span></span>
