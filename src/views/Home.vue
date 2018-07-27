@@ -9,13 +9,13 @@
               <router-link to="/" class="navbar-item">
                 <span class="logo is-header">Nakamu</span>
               </router-link>
-              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span class="navbar-burger burger"  @click="drawer = !drawer">
                 <span></span>
                 <span></span>
                 <span></span>
               </span>
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
+            <div id="navbarMenuHeroA" class="navbar-menu" :class="{'is-active': drawer}">
               <div class="navbar-end">
                 <router-link to="/" class="navbar-item is-active">About</router-link>
                 <!-- <router-link to="/socials" class="navbar-item">Socials</router-link> -->
@@ -210,6 +210,7 @@ export default {
   },
   data: () => {
       return {
+        drawer: false,
         skills: [
           'html5-original',
           'css3-original',
