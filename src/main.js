@@ -6,9 +6,9 @@ import './assets/scss/app.scss';
 import router from './router';
 import store from './store';
 
-if (process.env.GA_TRACKING_ID) {
+if (process.env.VUE_APP_GA_TRACKING_ID) {
   Vue.use(VueAnalytics, {
-    id: process.env.GA_TRACKING_ID,
+    id: process.env.VUE_APP_GA_TRACKING_ID,
     router,
   });
 }
