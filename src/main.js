@@ -6,11 +6,12 @@ import './assets/scss/app.scss';
 import router from './router';
 import store from './store';
 
-
-Vue.use(VueAnalytics, {
-  id: 'UA-113488529-4',
-  router,
-});
+if (process.env.GA_TRACKING_ID) {
+  Vue.use(VueAnalytics, {
+    id: process.env.GA_TRACKING_ID,
+    router,
+  });
+}
 
 Vue.use(Buefy);
 Vue.config.productionTip = false;
