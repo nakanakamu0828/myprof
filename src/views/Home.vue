@@ -280,7 +280,6 @@ export default {
   methods: {
     handleScroll() {
         this.scrollY = window.scrollY;
-        console.log(window.scrollY);
     }
   }
 };
