@@ -210,7 +210,10 @@ export default {
     htmlAttrs: {
       lang: 'ja',
       amp: undefined // "amp" has no value
-    }
+    },
+    meta: [
+     { charset: 'utf-8' }
+    ]
   },
   data: () => {
       return {
