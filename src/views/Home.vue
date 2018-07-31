@@ -219,7 +219,7 @@ export default {
       { name: "twitter:card", content: 'summary' },
       { name: "twitter:site", content: '@nakanakamu0828' },
       { name: "twitter:creator", content: '@nakanakamu0828' },
-      { name: "twitter:image", content: require('../assets/img/profile.jpg') },
+      { name: "twitter:image", content: process.env.VUE_APP_BASE_URL + require('../assets/img/profile.jpg') },
       { name: "twitter:title", content: 'Nakamuについての紹介ページ' },
       { name: "twitter:description", content: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
 
