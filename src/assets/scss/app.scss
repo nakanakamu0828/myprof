@@ -100,6 +100,25 @@ $sides: (top, bottom, left, right);
 }
 
 
+.navbar {
+  &.is-fixed-top.is-fadein {
+    animation:navbarShow 1s both;
+  }
+}
+
+
+@keyframes navbarShow {
+	0% {
+		transform:translate(0, -10rem);
+		opacity:0;
+	}
+	100% {
+		transform:translate(0, 0);
+		opacity:1;
+	}
+}
+
+
 @media screen and (max-width: 1087px) {
   .navbar-burger span:nth-child(1) {
     top: calc(50% - 7px);

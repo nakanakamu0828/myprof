@@ -1,7 +1,7 @@
 <template>
   <div id="top" class="home">
     <header>
-      <nav class="navbar is-primary is-fixed-top">
+      <nav class="navbar is-primary" :class="{'is-fixed-top is-fadein': scrollY > 100}">
         <div class="container">
           <div class="navbar-brand">
             <router-link to="/" class="navbar-item is-block">
@@ -32,7 +32,7 @@
         </div>
       </nav>
     </header>
-    <section class="hero is-primary">
+    <section class="hero is-primary" :class="{'m-t-5rem': scrollY > 100}">
       <!-- Hero head: will stick at the top -->
 
       <!-- Hero content: will be in the middle -->
@@ -219,6 +219,7 @@ export default {
   },
   data: () => {
       return {
+        scrollY: 0,
         drawer: false,
         skills: [
           'html5-original',
@@ -273,10 +274,22 @@ export default {
   },
   components: {
   },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+        this.scrollY = window.scrollY;
+        console.log(window.scrollY);
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+.m-t-5rem {
+  margin-top: 5rem;
+}
 .author-image {
     position: absolute;
     top: -5rem;
