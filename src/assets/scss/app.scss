@@ -28,6 +28,7 @@ $addColors: (
   "github": ($github, $github-invert)
 );
 $colors: map-merge($colors, $addColors);
+$navbar-height: 5rem;
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
@@ -60,10 +61,15 @@ $sides: (top, bottom, left, right);
   font-family: 'Leckerli One', cursive;
   
   &.is-header {
-    font-size: 1.5rem;
+    font-size: 2rem;
+
+    // & > img {
+    //   border: 1.5px solid #fff;
+    //   border-radius: 50%;
+    // }
 
     & + .subtitle {
-      margin-top: -.3rem;
+      color: $white;
     }
   }
 }
@@ -90,5 +96,27 @@ $sides: (top, bottom, left, right);
 
   &.is-white:before {
     background-color: $white;
+  }
+}
+
+
+@media screen and (max-width: 1087px) {
+  .navbar-burger span:nth-child(1) {
+    top: calc(50% - 7px);
+  }
+  .navbar-burger span:nth-child(3) {
+    top: calc(50% + 3px);
+  }
+  .navbar-menu {
+    background-color: $primary;
+    color: $white;
+
+    .navbar-item, .navbar-link {
+      color: $white;
+    }
+    a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+      background-color: #ff4646;
+      color: $white;
+    }
   }
 }

@@ -1,36 +1,39 @@
 <template>
   <div id="top" class="home">
-    <section class="hero is-primary">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <router-link to="/" class="navbar-item is-block">
-                <div class="logo is-header">Nakamu</div>
-                <div class="subtitle is-size-7"> 世界を旅して暮らしたい放浪エンジニア</div>
-              </router-link>
-
-
-              <span class="navbar-burger burger" :class="{'is-active': drawer}" @click="drawer = !drawer">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenuHeroA" class="navbar-menu" :class="{'is-active': drawer}">
-              <div class="navbar-end">
-                <router-link to="/" class="navbar-item is-active">About</router-link>
-                <!-- <router-link to="/socials" class="navbar-item">Socials</router-link> -->
-                <a href="mailto:yuuki.nakamura.0828@gmail.com" target="_blank" class="navbar-item">
-                  Contact
-                </a>
-
+    <header>
+      <nav class="navbar is-primary is-fixed-top">
+        <div class="container">
+          <div class="navbar-brand">
+            <router-link to="/" class="navbar-item is-block">
+              <div class="logo is-header">
+                Nakamu
+                <!-- <img src="../assets/img/profile.jpg" alt="Placeholder image"> -->
               </div>
+              <div class="subtitle is-size-7"> 世界を旅して暮らしたい放浪エンジニア</div>
+            </router-link>
+
+
+            <span class="navbar-burger burger" :class="{'is-active': drawer}" @click="drawer = !drawer">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu" :class="{'is-active': drawer}">
+            <div class="navbar-end">
+              <router-link to="/" class="navbar-item is-active">About</router-link>
+              <!-- <router-link to="/socials" class="navbar-item">Socials</router-link> -->
+              <a href="mailto:yuuki.nakamura.0828@gmail.com" target="_blank" class="navbar-item">
+                Contact
+              </a>
+
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero is-primary">
+      <!-- Hero head: will stick at the top -->
 
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
@@ -158,7 +161,7 @@
 
           <div class="box" style="margin-top: 10rem">
             <h2 class="title has-text-dark is-underline has-text-centered">
-              Let's talk.
+              Let's Play Together.
             </h2>
             <p class="has-text-centered">
               お仕事の相談など問い合わせはメールからSNSからお願いいたします。
@@ -283,6 +286,7 @@ export default {
     margin-left: -5rem;
     border: 3px solid #fff;
     border-radius: 50%;
+    animation:show 1s both;
 }
 .media-center {
   display: block;
@@ -321,5 +325,18 @@ export default {
   .introduction__body {
     margin: 0 6rem;
   }
+}
+
+
+@keyframes show {
+	0% {
+		transform:translate(0, -2em);
+		opacity:0;
+	}
+	100% {
+		transform:translate(0, 0);
+		opacity:1;
+		text-shadow:none;
+	}
 }
 </style>
