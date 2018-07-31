@@ -21,9 +21,9 @@
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu" :class="{'is-active': drawer}">
             <div class="navbar-end">
-              <router-link to="/" class="navbar-item is-active">About</router-link>
+              <router-link to="/" class="navbar-item is-active is-text-font-quicksand">About</router-link>
               <!-- <router-link to="/socials" class="navbar-item">Socials</router-link> -->
-              <a href="mailto:yuuki.nakamura.0828@gmail.com" target="_blank" class="navbar-item">
+              <a href="mailto:yuuki.nakamura.0828@gmail.com" target="_blank" class="navbar-item is-text-font-quicksand">
                 Contact
               </a>
 
@@ -54,19 +54,19 @@
               </div>
           </div>
           <div class="introduction__body">
-            <h2 class="has-text-centered is-underline">Introduction</h2>
+            <h2 class="has-text-centered is-underline is-text-font-quicksand">Introduction</h2>
             <p class="is-size-6 m-b-30">
                 香港在住3年目になるWEBエンジニアのなかむです。現在は、LaravelやRailsを利用したWEB開発を中心にエンジニアをしています。顧客は全て日本の企業になります。リモート開発にて各企業様の支援を行なっております。
             </p>
             <hr>
             <div class="is-clearfix"></div>
-            <h2 class="has-text-centered is-underline">Skills</h2>
+            <h2 class="has-text-centered is-underline is-text-font-quicksand">Skills</h2>
             <div class="has-text-centered">
               <img v-for="skill in skills" v-bind:src="'https://icongr.am/devicon/' + skill + '.svg?size=50'" style="margin-right: .5rem;">
             </div>
             <hr>
             <div class="is-clearfix"></div>
-            <h2 class="has-text-centered is-underline">Recent works</h2>
+            <h2 class="has-text-centered is-underline is-text-font-quicksand">Recent works</h2>
             <p class="is-size-6 has-text-centered m-b-20">
                 日系企業に向けて業務委託や受託でWEBサービスの開発を行なっています。
             </p>
@@ -101,7 +101,7 @@
     <section class="hero is-dark is-medium" style="margin-top: -10rem;">
       <div class="hero-body">
         <div class="container">
-          <!-- <h2 class="title is-underline is-white has-text-centered" style="margin-top: 10rem;">
+          <!-- <h2 class="title is-underline is-white has-text-centered is-text-font-quicksand" style="margin-top: 10rem;">
             Portfolio
           </h2>
           <div class="columns m-t-20">
@@ -160,7 +160,7 @@
           </div> -->
 
           <div class="box" style="margin-top: 10rem">
-            <h2 class="title has-text-dark is-underline has-text-centered">
+            <h2 class="title has-text-dark is-underline has-text-centered is-text-font-quicksand">
               Let's Play Together.
             </h2>
             <p class="has-text-centered">

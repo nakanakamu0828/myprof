@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Leckerli+One");
-
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bulma/sass/utilities/functions";
 // 1. Set your own initial variables and derived 
@@ -55,6 +55,10 @@ $sides: (top, bottom, left, right);
     width: 2.25em;
     height: 2.25em;
   }
+}
+
+.is-text-font-quicksand {
+  font-family: 'Quicksand', sans-serif;
 }
 
 .logo {
