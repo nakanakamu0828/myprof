@@ -214,7 +214,17 @@ export default {
       amp: undefined // "amp" has no value
     },
     meta: [
-      { description: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
+      { name: 'description', content: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
+
+      { name: "twitter:card", content: 'summary' },
+      { name: "twitter:site", content: '@nakanakamu0828' },
+      { name: "twitter:creator", content: '@nakanakamu0828' },
+      { name: "twitter:image", content: require('../assets/img/profile.jpg') },
+      { name: "twitter:title", content: 'Nakamuについての紹介ページ' },
+      { name: "twitter:description", content: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
+
+      { name: "og:title", content: 'Nakamuについての紹介ページ' },
+      { name: "og:description", content: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
     ]
   },
   data: () => {
