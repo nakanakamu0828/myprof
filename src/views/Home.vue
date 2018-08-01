@@ -211,7 +211,6 @@ export default {
     titleTemplate: '%s - Nakamu!',
     htmlAttrs: {
       lang: 'ja',
-      amp: undefined // "amp" has no value
     },
     meta: [
       { name: 'description', content: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
