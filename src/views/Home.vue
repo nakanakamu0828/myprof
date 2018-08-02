@@ -14,10 +14,10 @@
         <div class="box introduction">
           <div class="media">
               <div class="media-center">
-                  <img src="../assets/img/profile.jpg" class="author-image" alt="Placeholder image">
+                  <img src="../assets/img/profile.jpg" class="author-image" :alt="nickname">
               </div>
-              <div class="media-content has-text-centered">
-                  <h1 class="introduction__title">なかむ🇭🇰Laraveler</h1>
+              <div class="media-content m-t-50 has-text-centered">
+                  <h1 class="introduction__title" v-text="nickname"></h1>
                   <p class="introduction__subtitle">
                       "LaravelやRailsを利用したWEB開発を得意とする。WEBプログラマーです。"
                   </p>
@@ -25,11 +25,30 @@
           </div>
           <div class="introduction__body">
             <h2 class="has-text-centered is-underline is-text-font-quicksand">Introduction</h2>
-            <p class="is-size-6 m-b-30">
+            <div class="tags m-b-10 is-centered">
+              <span class="tag is-primary">Technology</span>
+              <span class="tag is-primary">Web Developer</span>
+              <span class="tag is-primary">Software Development</span>
+            </div>
+            <div class="box is-bg-lightbule">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="../assets/img/profile.jpg" class="is-rounded" :alt="nickname">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content m-t-20">
+                    <strong v-text="nickname"></strong>
+                  </div>
+                </div>
+              </div>
+              <blockquote style="margin-left:20px; margin-right:15px;" class="update-bubble">
                 香港在住3年目になるWEBエンジニアのなかむです。
                 現在は、LaravelやRailsを利用したWEB開発を中心にエンジニアをしています。
                 顧客は全て日本の企業になります。リモート開発にて各企業様の支援を行なっております。
-            </p>
+              </blockquote>
+            </div>
             <hr>
             <div class="is-clearfix"></div>
             <h2 class="has-text-centered is-underline is-text-font-quicksand">Skills</h2>
@@ -152,6 +171,7 @@ export default {
     ],
   },
   data: () => ({
+    nickname: 'なかむ🇭🇰Laraveler',
     skills: [
       'html5-original',
       'css3-original',
@@ -228,9 +248,6 @@ export default {
   display: block;
   margin-bottom: 1rem;
 }
-.media-content {
-  margin-top: 3rem;
-}
 
 .introduction__title {
   margin-top: 1rem;
@@ -254,6 +271,31 @@ export default {
     &:not(:first-child) {
       margin-top: 1.1428em;
     }
+  }
+}
+
+.update-bubble {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .2);
+  color: #333;
+  margin: 12px 0px 8px -10px;
+  overflow-wrap: break-word;
+  padding: 10px 15px;
+  position: relative;
+
+  &:after {
+    border: 15px solid transparent;
+    border-bottom-color: white;
+    content: "";
+    display: block;
+    left: 30px;
+    position: absolute;
+    top: -27px;
+    width: 0;
   }
 }
 
