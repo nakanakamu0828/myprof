@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item is-block">
-          <div class="logo is-header">
+          <div class="font-leckerli-one navbar-brand__title">
             Nakamu
           </div>
           <div class="subtitle is-size-7"> 世界を旅して暮らしたい放浪エンジニア</div>
@@ -16,7 +16,7 @@
           <span></span>
         </span>
       </div>
-      <div id="navbarMenuHeroA" class="navbar-menu" :class="{'is-active': drawer}">
+      <div class="navbar-menu" :class="{'is-active': drawer}">
         <div class="navbar-end">
           <router-link
             to="/"
@@ -59,5 +59,24 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.navbar {
+  .navbar-brand {
+    .navbar-brand__title {
+      font-size: 2rem;
+
+      & + .subtitle {
+        color: #fff;
+      }
+    }
+  }
+
+  .navbar-menu {
+    & > .navbar-start, & > .navbar-end {
+      a {
+        font-weight: 600;
+      }
+    }
+  }
+}
 </style>

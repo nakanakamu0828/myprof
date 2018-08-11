@@ -19,7 +19,7 @@
               <div class="media-content m-t-50 has-text-centered">
                   <h1 class="introduction__title" v-text="nickname"></h1>
                   <p class="introduction__subtitle">
-                      "LaravelやRailsを利用したWEB開発を得意とする。WEBプログラマーです。"
+                      Web Developer, Software Development & Mentor
                   </p>
               </div>
           </div>
@@ -258,7 +258,7 @@ export default {
 .introduction__subtitle {
   margin-bottom: 3rem;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .introduction__body {
   line-height: 1.4;

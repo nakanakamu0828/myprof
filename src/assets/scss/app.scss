@@ -77,21 +77,8 @@ $sides: (top, bottom, left, right);
   font-family: 'Quicksand', sans-serif;
 }
 
-.logo {
+.font-leckerli-one {
   font-family: 'Leckerli One', cursive;
-  
-  &.is-header {
-    font-size: 2rem;
-
-    // & > img {
-    //   border: 1.5px solid #fff;
-    //   border-radius: 50%;
-    // }
-
-    & + .subtitle {
-      color: $white;
-    }
-  }
 }
 
 .is-underline {
