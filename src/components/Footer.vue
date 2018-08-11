@@ -39,12 +39,11 @@
           and <a class="has-text-light" href="/madewith"><b>many more</b></a>.
         </small>
       </p>
-      <a
-        class="button is-light is-large is-rounded m-t-40"
-        href="#top"
-      >
-        Back to top
-      </a>
+      <div class="m-t-20">
+        <a href="https://bulma.io">
+          <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31">
+        </a>
+      </div>
     </div>
   </footer>
 </template>
