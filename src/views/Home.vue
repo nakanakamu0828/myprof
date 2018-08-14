@@ -154,7 +154,7 @@ export default {
   name: 'home',
   metaInfo: {
     title: 'プロフィール紹介ページ',
-    titleTemplate: '%s | Webデベロッパー「Nakamu」',
+    titleTemplate: '%s - Webデベロッパー「Nakamu」',
     htmlAttrs: {
       lang: 'ja',
     },
