@@ -153,23 +153,23 @@ const jobSearchImagePath = require('../assets/img/jobsearch.jpg');
 export default {
   name: 'home',
   metaInfo: {
-    title: 'Nakamuについての紹介ページ',
-    titleTemplate: '%s - Nakamu!',
+    title: 'Webデベロッパー「Nakamu」のプロフィール',
+    titleTemplate: 'Yuki Nakamura | %s',
     htmlAttrs: {
       lang: 'ja',
     },
     meta: [
-      { name: 'description', content: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
+      { name: 'description', content: '香港在住のWebデベロッパー「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
 
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@nakanakamu0828' },
       { name: 'twitter:creator', content: '@nakanakamu0828' },
       { name: 'twitter:image', content: profileImagePath },
-      { name: 'twitter:title', content: 'Nakamuについての紹介ページ' },
-      { name: 'twitter:description', content: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
+      { name: 'twitter:title', content: 'Webデベロッパー「Nakamu」のプロフィール' },
+      { name: 'twitter:description', content: '香港在住のWebデベロッパー「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
 
-      { name: 'og:title', content: 'Nakamuについての紹介ページ' },
-      { name: 'og:description', content: '香港在住エンジニア「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
+      { name: 'og:title', content: 'Webデベロッパー「Nakamu」のプロフィール' },
+      { name: 'og:description', content: '香港在住のWebデベロッパー「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
     ],
   },
   data: () => ({
