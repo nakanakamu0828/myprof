@@ -153,8 +153,8 @@ const jobSearchImagePath = require('../assets/img/jobsearch.jpg');
 export default {
   name: 'home',
   metaInfo: {
-    title: 'Webデベロッパー「Nakamu」のプロフィール',
-    titleTemplate: 'Yuki Nakamura | %s',
+    title: 'プロフィール紹介ページ',
+    titleTemplate: '%s | Webデベロッパー「Nakamu」',
     htmlAttrs: {
       lang: 'ja',
     },
