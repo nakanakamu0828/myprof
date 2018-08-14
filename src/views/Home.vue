@@ -26,11 +26,11 @@
           <div class="introduction__body">
             <h2 class="has-text-centered is-underline is-text-font-quicksand">Introduction</h2>
             <div class="tags m-b-30 is-centered">
-              <span class="tag is-primary is-medium">Technology</span>
-              <span class="tag is-primary is-medium">Web Developer</span>
-              <span class="tag is-primary is-medium">Software Development</span>
-              <span class="tag is-primary is-medium">PHPer</span>
-              <span class="tag is-primary is-medium">Laraveler</span>
+              <span class="tag is-primary is-medium is-rounded">Technology</span>
+              <span class="tag is-primary is-medium is-rounded">Web Developer</span>
+              <span class="tag is-primary is-medium is-rounded">Software Development</span>
+              <span class="tag is-primary is-medium is-rounded">PHPer</span>
+              <span class="tag is-primary is-medium is-rounded">Laraveler</span>
             </div>
             <div class="box is-bg-lightbule">
               <div class="media">
@@ -173,7 +173,7 @@ export default {
     ],
   },
   data: () => ({
-    nickname: 'なかむ🇭🇰Laraveler',
+    nickname: 'なかむ🇭🇰Webデベロッパー',
     skills: [
       'html5-original',
       'css3-original',
