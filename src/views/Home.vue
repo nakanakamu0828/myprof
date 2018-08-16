@@ -130,15 +130,15 @@
         </div>
       </div>
     </section>
-
     <Footer></Footer>
-
+    <ButtonPageTop />
   </div>
 </template>
 
 <script>
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+import ButtonPageTop from '../components/Button/PageTop.vue';
 
 import HomeSocials from '../components/Home/Socials.vue';
 // import HomePortfolio from '../components/Home/Portfolio.vue';
@@ -228,6 +228,7 @@ export default {
     Header,
     Footer,
     HomeSocials,
+    ButtonPageTop
     // HomePortfolio,
   },
 };
