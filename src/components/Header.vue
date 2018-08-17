@@ -24,7 +24,13 @@
           >
             About
           </router-link>
-          <!-- <router-link to="/socials" class="navbar-item">Socials</router-link> -->
+          <a
+            href="https://blog.nakamu.life/"
+            class="navbar-item is-text-font-quicksand"
+            target="_blank"
+          >
+            Blog
+          </a>
           <a
             href="mailto:yuuki.nakamura.0828@gmail.com"
             target="_blank"

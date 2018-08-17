@@ -1,70 +1,59 @@
 <template>
   <div>
-    <h2 class="title is-underline is-white has-text-centered is-text-font-quicksand" style="margin-top: 10rem;">
-      Portfolio
-    </h2>
+    <div class="has-text-centered">
+      <h2 class="title is-underline is-white is-text-font-quicksand" style="margin-top: 5rem;">
+        Contents
+      </h2>
+      <p class="subtitle has-text-white is-7">個人サイトや提供しているコンテンツ</p>
+    </div>
     <div class="columns m-t-20">
 
-      <div class="column is-4">
-        <div class="card is-shady">
+      <div
+        class="column is-flex is-4"
+        v-for="(content, key, index) in contents"
+        :key="index"
+      >
+        <div class="card">
           <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/RWnpyGtY1aU" alt="Placeholder image" class="modal-button" data-target="modal-image2">
-            </figure>
+            <a :href="content.link" target="_blank" class="image">
+              <img :src="content.image_src" :alt="content.image_alt">
+            </a>
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>Click on image above</h4>
-              <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-              <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
+              <h4>
+                <a :href="content.link" target="_blank">{{ content.title }}</a>
+              </h4>
+              <p>{{ content.description }}</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="column is-4">
-        <div class="card is-shady">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>Tempor orci dapibus ultrices in.</h4>
-              <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-              sed risus.</p>
-              <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-4">
-        <div class="card is-shady">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>Tempor orci dapibus ultrices in.</h4>
-              <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-              sed risus.</p>
-              <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </template>
 
 <script>
+
+/* eslint-disable global-require */
+const blogImagePath = require('../../assets/img/nakamu_blog_banner.png');
+/* eslint-enable global-require */
+
 export default {
   name: 'Portfolio',
   props: {
   },
+  data: () => ({
+    contents: [
+      {
+        image_src: blogImagePath,
+        image_alt: 'なかむ🇭🇰エンジニアブログ',
+        title: 'なかむ🇭🇰エンジニアブログ',
+        description: '今ままでのエンジニア経験を元にした技術ブログまとめまています',
+        link: 'https://blog.nakamu.life/',
+      },
+    ],
+  }),
 };
 </script>
 

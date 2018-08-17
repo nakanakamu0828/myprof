@@ -107,7 +107,7 @@
       <div class="hero-body">
         <div class="container">
           <HomeSocials></HomeSocials>
-          <!-- <HomePortfolio></HomePortfolio> -->
+          <HomePortfolio></HomePortfolio>
 
           <div class="box" style="margin-top: 10rem">
             <h2 class="title has-text-dark is-underline has-text-centered is-text-font-quicksand">
@@ -141,7 +141,7 @@ import Footer from '../components/Footer.vue';
 import ButtonPageTop from '../components/Button/PageTop.vue';
 
 import HomeSocials from '../components/Home/Socials.vue';
-// import HomePortfolio from '../components/Home/Portfolio.vue';
+import HomePortfolio from '../components/Home/Portfolio.vue';
 
 
 /* eslint-disable global-require */
@@ -228,8 +228,8 @@ export default {
     Header,
     Footer,
     HomeSocials,
-    ButtonPageTop
-    // HomePortfolio,
+    ButtonPageTop,
+    HomePortfolio,
   },
 };
 </script>
