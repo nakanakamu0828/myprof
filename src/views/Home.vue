@@ -24,8 +24,11 @@
               </div>
           </div>
           <div class="introduction__body">
-            <h2 class="has-text-centered is-underline is-text-font-quicksand">Introduction</h2>
-            <div class="tags m-b-30 is-centered">
+            <div class="has-text-centered">
+              <h2 class="title has-text-dark is-underline is-text-font-quicksand">Introduction</h2>
+              <p class="subtitle has-text-dark is-7">自己紹介</p>
+            </div>
+            <div class="tags m-t-40 m-b-30 is-centered">
               <span class="tag is-primary is-medium is-rounded">Technology</span>
               <span class="tag is-primary is-medium is-rounded">Web Developer</span>
               <span class="tag is-primary is-medium is-rounded">Software Development</span>
@@ -53,8 +56,11 @@
             </div>
             <hr>
             <div class="is-clearfix"></div>
-            <h2 class="has-text-centered is-underline is-text-font-quicksand">Skills</h2>
             <div class="has-text-centered">
+              <h2 class="title has-text-dark is-underline is-text-font-quicksand">Skills</h2>
+              <p class="subtitle has-text-dark is-7">スキル</p>
+            </div>
+            <div class="has-text-centered m-t-40">
               <img
                 v-for="(skill, key, index) in skills"
                 :key="index"
@@ -64,8 +70,12 @@
             </div>
             <hr>
             <div class="is-clearfix"></div>
-            <h2 class="has-text-centered is-underline is-text-font-quicksand">Recent works</h2>
-            <p class="is-size-6 has-text-centered m-b-20">
+            <div class="has-text-centered">
+              <h2 class="title has-text-dark is-underline is-text-font-quicksand">Recent works</h2>
+              <p class="subtitle has-text-dark is-7">直近のお仕事</p>
+            </div>
+
+            <p class="is-size-6 has-text-centered m-t-40 m-b-20">
                 日系企業に向けて業務委託や受託でWEBサービスの開発を行なっています。
             </p>
 
@@ -110,12 +120,12 @@
           <HomePortfolio></HomePortfolio>
 
           <div class="box" style="margin-top: 10rem">
-            <h2 class="title has-text-dark is-underline has-text-centered is-text-font-quicksand">
-              Let's Play Together.
-            </h2>
-            <p class="has-text-centered">
-              お仕事の相談など問い合わせはメールからSNSからお願いいたします。
-            </p>
+            <div class="has-text-centered">
+              <h2 class="title has-text-dark is-underline has-text-centered is-text-font-quicksand">
+                Let's Play Together.
+              </h2>
+              <p class="subtitle has-text-dark is-7">お仕事募集中。一緒にプログラミングしましょう</p>
+            </div>
 
             <div class="columns" style="margin-top: 1.5rem;">
               <div class="column is-offset-3 is-6">

@@ -1,10 +1,13 @@
 <template>
   <div>
-    <h2
-      class="title is-underline is-white has-text-centered is-text-font-quicksand"
-      style="margin-top: 10rem;">
-      Socials
-    </h2>
+    <div class="has-text-centered">
+      <h2
+        class="title is-underline is-white is-text-font-quicksand"
+        style="margin-top: 10rem;">
+        Socials
+      </h2>
+      <p class="subtitle has-text-white is-7">ソーシャル</p>
+    </div>
     <div class="columns is-centered is-multiline m-t-50">
       <a href="https://twitter.com/nakanakamu0828" target="_blank" class="column is-4">
         <div class="box has-text-centered has-text-white is-bg-twitter" style="padding: 3rem;">
