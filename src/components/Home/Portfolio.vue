@@ -56,7 +56,7 @@ export default {
       {
         image_src: mentorImagePath,
         image_alt: 'Programming Mentor - なかむ',
-        title: 'MENTAを利用したプログラミングメンター',
+        title: 'MENTAを利用してプログラミングメンターをしています',
         description: 'プログラマーとして一歩成長したい方向けにメンター活動を行なっています。Laravel, Railsを中心としてWEB技術を教えています。',
         link: 'https://menta.work/plan/124',
       },
