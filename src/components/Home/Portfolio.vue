@@ -37,6 +37,7 @@
 
 /* eslint-disable global-require */
 const blogImagePath = require('../../assets/img/nakamu_blog_banner.png');
+const mentorImagePath = require('../../assets/img/nakamulilfe_programming_mentor.png');
 /* eslint-enable global-require */
 
 export default {
@@ -51,6 +52,13 @@ export default {
         title: 'なかむ🇭🇰エンジニアブログ',
         description: '今ままでのエンジニア経験を元にした技術ブログまとめまています',
         link: 'https://blog.nakamu.life/',
+      },
+      {
+        image_src: mentorImagePath,
+        image_alt: 'Programming Mentor - なかむ',
+        title: 'MENTAを利用したプログラミングメンター',
+        description: 'プログラマーとして一歩成長したい方向けにメンター活動を行なっています。Laravel, Railsを中心としてWEB技術を教えています。',
+        link: 'https://menta.work/plan/124',
       },
     ],
   }),
