@@ -163,22 +163,22 @@ const jobSearchImagePath = require('../assets/img/jobsearch.jpg');
 export default {
   name: 'home',
   metaInfo: {
-    title: 'プロフィール紹介ページ',
-    titleTemplate: '%s - Webデベロッパー「Nakamu」',
+    title: 'プロフィール紹介',
+    titleTemplate: '%s - Webデベロッパー「なかむ」',
     htmlAttrs: {
       lang: 'ja',
     },
     meta: [
-      { name: 'description', content: '香港在住のWebデベロッパー「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
+      { name: 'description', content: '香港在住のWebデベロッパー「なかむ」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
 
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@nakanakamu0828' },
       { name: 'twitter:creator', content: '@nakanakamu0828' },
       { name: 'twitter:image', content: profileImagePath },
-      { name: 'twitter:title', content: 'Webデベロッパー「Nakamu」のプロフィール' },
+      { name: 'twitter:title', content: 'Webデベロッパー「なかむ」のプロフィール' },
       { name: 'twitter:description', content: '香港在住のWebデベロッパー「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
 
-      { name: 'og:title', content: 'Webデベロッパー「Nakamu」のプロフィール' },
+      { name: 'og:title', content: 'Webデベロッパー「なかむ」のプロフィール' },
       { name: 'og:description', content: '香港在住のWebデベロッパー「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
     ],
   },
