@@ -81,7 +81,7 @@
 
             <div class="columns features">
 
-              <div class="column is-6"
+              <div class="column is-flex is-6"
                 v-for="(work, key, index) in works"
                 :key="index"
               >
