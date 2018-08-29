@@ -1,5 +1,10 @@
 <template>
-    <a id="page-top" class="button is-info is-large is-circle" :class="{'is-hidden': scrollY < 200}" @click="scrollToTop()">
+    <a
+      id="page-top"
+      class="button is-info is-large is-circle"
+      :class="{'is-hidden': scrollY < 200}"
+      v-scroll-to="'body'"
+    >
       <i class="fas fa-angle-up"></i>
     </a>
 </template>
@@ -17,9 +22,6 @@ export default {
     handleScroll() {
       this.scrollY = window.scrollY;
     },
-    scrollToTop(){
-        window.scrollTo(0, 0)
-    }
   },
 };
 </script>
@@ -47,20 +49,20 @@ export default {
 }
 
 @keyframes fadein {
-	0% {
-		opacity:0;
-	}
-	100% {
-		opacity:1;
-	}
+0% {
+  opacity:0;
+}
+100% {
+  opacity:1;
+}
 }
 
 @keyframes fadeout {
-	0% {
-		opacity:1;
-	}
-	100% {
-		opacity:0;
-	}
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
 }
 </style>
