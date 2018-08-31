@@ -33,6 +33,15 @@
           </p>
         </div>
       </a>
+
+      <a href="https://instagram.com/____nakamu____" target="_blank" class="jsx-3619482712 column is-one-third social-links">
+        <div class="box has-text-centered has-text-white is-bg-instagram" style="padding: 3rem;">
+          <i class="fab fa-instagram fa-3x"></i>
+          <p class="subtitle m-t-10">
+            Instagram
+          </p>
+        </div>
+      </a>
     </div>
   </div>
 </template>

@@ -22,6 +22,8 @@ $github: #25292e;
 $github-invert: findColorInvert($github);
 $medium: #03a87c;
 $medium-invert: findColorInvert($medium);
+$instagram: #D93177;
+$instagram-invert: findColorInvert($instagram);
 
 
 @import "~bulma/sass/utilities/derived-variables";
@@ -62,6 +64,9 @@ $sides: (top, bottom, left, right);
 }
 .is-bg-medium {
   background: $medium;
+}
+.is-bg-instagram {
+  background: $instagram;
 }
 .is-bg-lightbule {
   background: #f8f9fb;
