@@ -6,6 +6,7 @@ import App from './App.vue';
 import './assets/scss/app.scss';
 import router from './router';
 import store from './store';
+import './registerServiceWorker';
 
 if (process.env.VUE_APP_GA_TRACKING_ID) {
   Vue.use(VueAnalytics, {

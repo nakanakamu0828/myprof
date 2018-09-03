@@ -2,6 +2,9 @@ const path = require('path');
 const PrerenderSpaPlugin = require('prerender-spa-plugin');
 
 module.exports = {
+  pwa: {
+    name: 'なかむ🇭🇰プロフィール',
+  },
   configureWebpack: () => {
     if (process.env.NODE_ENV === 'production') {
       return {
