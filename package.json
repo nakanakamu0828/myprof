@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "netlify-lambda serve src/lambda && vue-cli-service serve",
+    "build": "netlify-lambda build src/lambda && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "buefy": "^0.6.3",
+    "netlify-lambda": "^0.4.0",
     "node-sass": "^4.9.2",
     "prerender-spa-plugin": "^3.2.1",
     "register-service-worker": "^1.0.0",
