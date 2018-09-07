@@ -129,9 +129,11 @@
 
             <div class="columns" style="margin-top: 1.5rem;">
               <div class="column is-offset-3 is-6">
-                <a href="mailto:yuuki.nakamura.0828@gmail.com"
-                  target="_blank"
-                  class="button is-info is-outlined is-medium is-fullwidth">
+                <a
+                  href="javascript:void(0)"
+                  class="button is-info is-outlined is-medium is-fullwidth"
+                  @click="toggleContactModal"
+                >
                   ️✉️ お問い合わせ
                 </a>
               </div>
@@ -142,6 +144,7 @@
     </section>
     <Footer></Footer>
     <ButtonPageTop />
+    <ModalContact />
   </div>
 </template>
 
@@ -149,6 +152,7 @@
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import ButtonPageTop from '../components/Button/PageTop.vue';
+import ModalContact from '../components/Modal/Contact.vue';
 
 import HomeSocials from '../components/Home/Socials.vue';
 import HomePortfolio from '../components/Home/Portfolio.vue';
@@ -240,6 +244,12 @@ export default {
     HomeSocials,
     ButtonPageTop,
     HomePortfolio,
+    ModalContact,
+  },
+  methods: {
+    toggleContactModal() {
+      this.$store.dispatch('toggleContactModal');
+    },
   },
 };
 </script>

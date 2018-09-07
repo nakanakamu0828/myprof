@@ -113,7 +113,6 @@ $sides: (top, bottom, left, right);
   }
 }
 
-
 .navbar {
   &.is-fixed-top.is-fadein {
     animation:navbarShow 1s both;
@@ -122,6 +121,10 @@ $sides: (top, bottom, left, right);
       margin-top: 5rem;
     }
   }
+}
+
+.is-clipped {
+  overflow: hidden!important;
 }
 
 
