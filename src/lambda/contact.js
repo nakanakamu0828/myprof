@@ -31,6 +31,7 @@ exports.handler = (event, context, callback) => {
     const data = JSON.parse(event.body);
 
     let error = []
+    if (!data.name) error.push({ name: '氏名を入力して下さい' })
     if (!data.title) error.push({ title: 'タイトルを入力して下さい' })
     if (data.email && !emailValidator.validate(data.email)) error.push({ email: 'メールアドレスが正しくありません' })
     if (!data.body) error.push({ body: '問い合わせ内容を入力して下さい' })
@@ -46,11 +47,14 @@ exports.handler = (event, context, callback) => {
     }
 
     const message = `
-【 タイトル 】
-${data.title}
+【 氏名 】
+${data.name}
 
 【 メールアドレス 】
 ${data.email}
+
+【 タイトル 】
+${data.title}
 
 【 問い合わせ内容 】
 ${data.body}
