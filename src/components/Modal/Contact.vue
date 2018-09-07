@@ -161,6 +161,7 @@ export default {
             body: this.body,
           })
             .then(() => {
+              this.input = false;
               this.name = null;
               this.email = null;
               this.title = null;
