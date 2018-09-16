@@ -41,6 +41,14 @@
           </p>
         </a>
       </div>
+      <div class="column is-4">
+        <a href="https://gitlab.com/nakamu" target="_blank" class="box has-text-centered has-text-white is-bg-gitlab" style="padding: 3rem;">
+          <i class="fab fa-gitlab fa-3x"></i>
+          <p class="subtitle m-t-10">
+            Gitlab
+          </p>
+        </a>
+      </div>
     </div>
   </div>
 </template>
