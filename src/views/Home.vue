@@ -55,58 +55,64 @@
               </blockquote>
             </div>
             <hr>
-            <div class="is-clearfix"></div>
-            <div class="has-text-centered">
-              <h2 class="title has-text-dark is-underline is-text-font-quicksand">Skills</h2>
-              <p class="subtitle has-text-dark is-7">スキル</p>
-            </div>
-            <div class="has-text-centered m-t-40">
-              <img
-                v-for="(skill, key, index) in skills"
-                :key="index"
-                v-bind:src="'https://icongr.am/devicon/' + skill + '.svg?size=50'"
-                style="margin-right: .5rem;"
-              >
+            <div id="area-skills">
+              <div class="is-clearfix"></div>
+              <div class="has-text-centered">
+                <h2 class="title has-text-dark is-underline is-text-font-quicksand">Skills</h2>
+                <p class="subtitle has-text-dark is-7">スキル</p>
+              </div>
+              <div class="has-text-centered m-t-40">
+                <img
+                  v-for="(skill, key, index) in skills"
+                  :key="index"
+                  v-bind:src="'https://icongr.am/devicon/' + skill + '.svg?size=50'"
+                  style="margin-right: .5rem;"
+                >
+              </div>
             </div>
             <hr>
-            <div class="is-clearfix"></div>
-            <div class="has-text-centered">
-              <h2 class="title has-text-dark is-underline is-text-font-quicksand">Recent works</h2>
-              <p class="subtitle has-text-dark is-7">直近のお仕事</p>
-            </div>
+            <div id="area-works">
+              <div class="is-clearfix"></div>
+              <div class="has-text-centered">
+                <h2 class="title has-text-dark is-underline is-text-font-quicksand">
+                  Recent works
+                </h2>
+                <p class="subtitle has-text-dark is-7">直近のお仕事</p>
+              </div>
 
-            <p class="is-size-6 has-text-centered m-t-40 m-b-20">
-                日系企業に向けて業務委託や受託でWEBサービスの開発を行なっています。
-            </p>
+              <p class="is-size-6 has-text-centered m-t-40 m-b-20">
+                  日系企業に向けて業務委託や受託でWEBサービスの開発を行なっています。
+              </p>
 
-            <div class="columns features">
+              <div class="columns features">
 
-              <div class="column is-flex is-6"
-                v-for="(work, key, index) in works"
-                :key="index"
-              >
-                <div class="card is-shady">
-                  <div class="card-image">
-                    <figure class="image is-2by1">
-                      <img :src="work.image_src" :alt="work.image_alt">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="content">
-                      <h4 v-text="work.title"></h4>
-                      <p v-html="work.description"></p>
-                      <p v-if="work.skills">
-                        <img
-                          v-for="(skill, key, index) in work.skills"
-                          :key="index"
-                          v-bind:src="'https://icongr.am/devicon/' + skill + '.svg?size=30'" style="margin-right: .5rem;"
-                        >
-                      </p>
+                <div class="column is-flex is-6"
+                  v-for="(work, key, index) in works"
+                  :key="index"
+                >
+                  <div class="card is-shady">
+                    <div class="card-image">
+                      <figure class="image is-2by1">
+                        <img :src="work.image_src" :alt="work.image_alt">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <h4 v-text="work.title"></h4>
+                        <p v-html="work.description"></p>
+                        <p v-if="work.skills">
+                          <img
+                            v-for="(skill, key, index) in work.skills"
+                            :key="index"
+                            v-bind:src="'https://icongr.am/devicon/' + skill + '.svg?size=30'" style="margin-right: .5rem;"
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
 
           </div>
@@ -119,7 +125,7 @@
           <HomeSocials></HomeSocials>
           <HomePortfolio></HomePortfolio>
 
-          <div class="box" style="margin-top: 10rem">
+          <div id="area-contact" class="box" style="margin-top: 10rem">
             <div class="has-text-centered">
               <h2 class="title has-text-dark is-underline has-text-centered is-text-font-quicksand">
                 Let's Play Together.
@@ -274,7 +280,7 @@ export default {
 
 .introduction__title {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   line-height: 2;
 }
@@ -323,6 +329,9 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
+  .introduction__title {
+    font-size: 2rem;
+  }
   .introduction__body {
     margin: 0 6rem;
   }

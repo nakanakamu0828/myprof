@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="area-contents">
     <div class="has-text-centered">
       <h2 class="title is-underline is-white is-text-font-quicksand" style="margin-top: 5rem;">
         Contents

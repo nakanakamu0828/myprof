@@ -21,27 +21,70 @@
           <div class="tabs is-centered m-b-0">
               <ul>
                   <li>
-                    <router-link
+                    <a
                       to="/"
                       class="is-text-font-quicksand"
+                      v-scroll-to="'body'"
                     >
-                      About
-                    </router-link>
-                  </li>
-                  <li>
-                    <a
-                      href="https://blog.nakamu.life/"
-                      class="is-text-font-quicksand"
-                      target="_blank"
-                    >
-                      Blog
+                      Introduction
                     </a>
                   </li>
                   <li>
                     <a
                       href="javascript:void(0)"
                       class="is-text-font-quicksand"
-                      @click="toggleContactModal"
+                      v-scroll-to="{
+                        el: '#area-skills',
+                        offset: -100,
+                      }"
+                    >
+                      Skills
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="is-text-font-quicksand"
+                      v-scroll-to="{
+                        el: '#area-works',
+                        offset: -100,
+                      }"
+                    >
+                      Works
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="is-text-font-quicksand"
+                      v-scroll-to="{
+                        el: '#area-socials',
+                        offset: -100,
+                      }"
+                    >
+                      Socials
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="is-text-font-quicksand"
+                      v-scroll-to="{
+                        el: '#area-contents',
+                        offset: -100,
+                      }"
+                    >
+                      Contents
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="is-text-font-quicksand"
+                      v-scroll-to="{
+                        el: '#area-contact',
+                        offset: -100,
+                      }"
                     >
                       Contact
                     </a>

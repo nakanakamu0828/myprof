@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="area-socials">
     <div class="has-text-centered">
       <h2
         class="title is-underline is-white is-text-font-quicksand"
