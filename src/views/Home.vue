@@ -55,21 +55,7 @@
               </blockquote>
             </div>
             <hr>
-            <div id="area-skills">
-              <div class="is-clearfix"></div>
-              <div class="has-text-centered">
-                <h2 class="title has-text-dark is-underline is-text-font-quicksand">Skills</h2>
-                <p class="subtitle has-text-dark is-7">スキル</p>
-              </div>
-              <div class="has-text-centered m-t-40">
-                <img
-                  v-for="(skill, key, index) in skills"
-                  :key="index"
-                  v-bind:src="'https://icongr.am/devicon/' + skill + '.svg?size=50'"
-                  style="margin-right: .5rem;"
-                >
-              </div>
-            </div>
+            <HomeSkills />
             <hr>
             <div id="area-works">
               <div class="is-clearfix"></div>
@@ -161,6 +147,7 @@ import ButtonPageTop from '../components/Button/PageTop.vue';
 import ModalContact from '../components/Modal/Contact.vue';
 
 import HomeSocials from '../components/Home/Socials.vue';
+import HomeSkills from '../components/Home/Skills.vue';
 import HomePortfolio from '../components/Home/Portfolio.vue';
 
 
@@ -194,22 +181,6 @@ export default {
   },
   data: () => ({
     nickname: 'なかむ🇭🇰Webデベロッパー',
-    skills: [
-      'html5-original',
-      'css3-original',
-      'javascript-original',
-      'jquery-original',
-      'php-plain',
-      'laravel-plain',
-      'symfony-original',
-      'zend-plain',
-      'ruby-plain',
-      'rails-plain-wordmark',
-      'linux-original',
-      'mysql-original',
-      'redis-original',
-      'nginx-original',
-    ],
     works: [
       {
         image_src: smailImagePath,
@@ -248,6 +219,7 @@ export default {
     Header,
     Footer,
     HomeSocials,
+    HomeSkills,
     ButtonPageTop,
     HomePortfolio,
     ModalContact,

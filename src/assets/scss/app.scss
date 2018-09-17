@@ -29,6 +29,8 @@ $instagram-invert: findColorInvert($instagram);
 
 
 @import "~bulma/sass/utilities/derived-variables";
+@import "~bulma-extensions/bulma-timeline/src/sass/index";
+
 
 // 3. Add new color variables to the color map.
 $addColors: (
