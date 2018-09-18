@@ -135,6 +135,25 @@ $sides: (top, bottom, left, right);
 }
 
 
+$tag-colors: (
+    "primary": $primary,
+    "info": $info,
+    "success": $success,
+    "warning": $warning,
+    "danger": $danger,
+);
+
+.tag {
+  @each $key, $color in $tag-colors {
+      &.is-#{$key}.is-outlined {
+          background-color: transparent;
+          border-color: map-get($tag-colors, $key);
+          color: map-get($tag-colors, $key);
+          border: 1px solid;
+      }
+  }
+}
+
 @keyframes navbarShow {
 	0% {
 		transform:translate(0, -10rem);

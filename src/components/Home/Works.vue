@@ -8,7 +8,7 @@
 
     <div class="timeline m-t-30">
         <header class="timeline-header">
-            <span class="tag is-primary">Now</span>
+            <span class="tag is-primary is-outlined">Now</span>
         </header>
         <div class="timeline-item p-b-10">
             <div class="timeline-marker"></div>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="timeline-header">
-            <span class="tag is-primary">2016</span>
+            <span class="tag is-primary is-outlined">2016</span>
         </div>
 
         <div class="timeline-item p-b-0">
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="timeline-header">
-            <span class="tag is-primary">2015</span>
+            <span class="tag is-primary is-outlined">2015</span>
         </div>
 
         <div class="timeline-item p-b-10">
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="timeline-header">
-            <span class="tag is-primary">2014</span>
+            <span class="tag is-primary is-outlined">2014</span>
         </div>
 
         <div class="timeline-item p-b-0">
@@ -88,7 +88,7 @@
             </div>
         </div>
         <div class="timeline-header">
-            <span class="tag is-primary">2013</span>
+            <span class="tag is-primary is-outlined">2013</span>
         </div>
 
         <div class="timeline-item p-b-10">
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="timeline-header">
-            <span class="tag is-primary">2011</span>
+            <span class="tag is-primary is-outlined">2011</span>
         </div>
 
         <div class="timeline-item p-b-10">
@@ -120,7 +120,7 @@
             </div>
         </div>
         <div class="timeline-header">
-            <span class="tag is-primary">2010</span>
+            <span class="tag is-primary is-outlined">2010</span>
         </div>
 
         <div class="timeline-item p-b-10">
@@ -140,7 +140,7 @@
             </div>
         </div>
         <div class="timeline-header">
-            <span class="tag is-primary">2007</span>
+            <span class="tag is-primary is-outlined">2007</span>
         </div>
     </div>
 
