@@ -57,50 +57,7 @@
             <hr>
             <HomeSkills />
             <hr>
-            <div id="area-works">
-              <div class="is-clearfix"></div>
-              <div class="has-text-centered">
-                <h2 class="title has-text-dark is-underline is-text-font-quicksand">
-                  Recent works
-                </h2>
-                <p class="subtitle has-text-dark is-7">直近のお仕事</p>
-              </div>
-
-              <p class="is-size-6 has-text-centered m-t-40 m-b-20">
-                  日系企業に向けて業務委託や受託でWEBサービスの開発を行なっています。
-              </p>
-
-              <div class="columns features">
-
-                <div class="column is-flex is-6"
-                  v-for="(work, key, index) in works"
-                  :key="index"
-                >
-                  <div class="card is-shady">
-                    <div class="card-image">
-                      <figure class="image is-2by1">
-                        <img :src="work.image_src" :alt="work.image_alt">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="content">
-                        <h4 v-text="work.title"></h4>
-                        <p v-html="work.description"></p>
-                        <p v-if="work.skills">
-                          <img
-                            v-for="(skill, key, index) in work.skills"
-                            :key="index"
-                            v-bind:src="'https://icongr.am/devicon/' + skill + '.svg?size=30'" style="margin-right: .5rem;"
-                          >
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
+            <HomeWorks />
           </div>
         </div>
       </div>
@@ -148,13 +105,12 @@ import ModalContact from '../components/Modal/Contact.vue';
 
 import HomeSocials from '../components/Home/Socials.vue';
 import HomeSkills from '../components/Home/Skills.vue';
+import HomeWorks from '../components/Home/Works.vue';
 import HomePortfolio from '../components/Home/Portfolio.vue';
 
 
 /* eslint-disable global-require */
 const profileImagePath = process.env.VUE_APP_BASE_URL + require('../assets/img/profile.jpg');
-const smailImagePath = require('../assets/img/smail.png');
-const jobSearchImagePath = require('../assets/img/jobsearch.jpg');
 /* eslint-enable global-require */
 
 export default {
@@ -181,45 +137,13 @@ export default {
   },
   data: () => ({
     nickname: 'なかむ🇭🇰Webデベロッパー',
-    works: [
-      {
-        image_src: smailImagePath,
-        image_alt: 'SMail',
-        title: '✉️一括メール配信サービス',
-        description: 'SESマネージメント企業の営業メール配信システム。クライアントの管理からメールの一斉送信＆予約送信が可能なサービス。<br><br>',
-        skills: [
-          'html5-original',
-          'css3-original',
-          'javascript-original',
-          'jquery-original',
-          'php-plain',
-          'laravel-plain',
-          'mysql-original',
-        ],
-      },
-      {
-        image_src: jobSearchImagePath,
-        image_alt: 'Job Search',
-        title: '求職サイト（転職・派遣）',
-        description: '派遣による就職を目指す方の求職サイト。給与や勤怠までトータルに管理できるWEBサービス<br>飲食、アパレル業種の転職者をターゲットとした転職サイト',
-        skills: [
-          'html5-original',
-          'css3-original',
-          'javascript-original',
-          'jquery-original',
-          'php-plain',
-          'symfony-original',
-          'mysql-original',
-          'redis-original',
-        ],
-      },
-    ],
   }),
   components: {
     Header,
     Footer,
     HomeSocials,
     HomeSkills,
+    HomeWorks,
     ButtonPageTop,
     HomePortfolio,
     ModalContact,
