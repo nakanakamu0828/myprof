@@ -33,7 +33,7 @@
             <div class="timeline-content">
                 <p class="heading">2015.7 ~ - SHIEN株式会社起業</p>
                 <div>
-                    <p>Web制作やシステム開発の受託・業務委託を中心に、各企業のIT部門を支援する会社を企業</p>
+                    <p>Web制作やシステム開発の受託・業務委託を中心に、各企業のIT部門を支援する会社を起業</p>
                     <div class="m-t-5 is-size-7">
                         【Skills】<br>
                         PHP / Laravel5 / Ruby / Rails / Apache / nginx / MySQL / MariaDB
