@@ -1,6 +1,43 @@
 <template>
   <footer class="footer has-background-dark has-text-light">
     <div class="container is-fluid has-text-centered">
+      <ul class="footer__menu-list">
+        <li>
+          <a
+            to="/"
+            class="is-text-font-quicksand"
+            v-scroll-to="'body'"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://blog.nakamu.life/"
+            class="is-text-font-quicksand"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Blog
+            <sup>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 1792 1792" fill="currentColor"><path d="M1408 928v320q0 119-84.5 203.5t-203.5 84.5h-832q-119 0-203.5-84.5t-84.5-203.5v-832q0-119 84.5-203.5t203.5-84.5h704q14 0 23 9t9 23v64q0 14-9 23t-23 9h-704q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-320q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19-45-19l-176-176-652 652q-10 10-23 10t-23-10l-114-114q-10-10-10-23t10-23l652-652-176-176q-19-19-19-45t19-45 45-19h512q26 0 45 19t19 45z"/></svg>
+            </sup>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://blog.nakamu.life/policy/privacy"
+            class="is-text-font-quicksand"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Privacy Policy
+            <sup>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 1792 1792" fill="currentColor"><path d="M1408 928v320q0 119-84.5 203.5t-203.5 84.5h-832q-119 0-203.5-84.5t-84.5-203.5v-832q0-119 84.5-203.5t203.5-84.5h704q14 0 23 9t9 23v64q0 14-9 23t-23 9h-704q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-320q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19-45-19l-176-176-652 652q-10 10-23 10t-23-10l-114-114q-10-10-10-23t10-23l652-652-176-176q-19-19-19-45t19-45 45-19h512q26 0 45 19t19 45z"/></svg>
+            </sup>
+          </a>
+        </li>
+      </ul>
       <div class="buttons" style="justify-content: center;">
         <a
           href="https://twitter.com/nakanakamu0828"
@@ -48,7 +85,27 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+footer {
+  padding: 6rem 1.5rem;
+  ul.footer__menu-list {
+    margin-bottom: 2rem;
+    & > li {
+      display: inline-block;
+      margin: auto 1rem;
+      margin-bottom: .5rem;
+
+      & > a {
+        color: whitesmoke;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+
 .button {
     padding-left: calc(.625em - 1px)!important;
     padding-right: calc(.625em - 1px)!important;

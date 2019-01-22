@@ -94,6 +94,7 @@
                       href="http://blog.nakamu.life"
                       class="is-text-font-quicksand"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Blog
                       <sup>
