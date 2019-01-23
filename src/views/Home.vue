@@ -134,6 +134,10 @@ export default {
       { name: 'og:title', content: 'Webデベロッパー「なかむ」のプロフィール' },
       { name: 'og:description', content: '香港在住のWebデベロッパー「Nakamu」のプロフィール紹介ページです。エンジニアとしての経歴やどんなスキルを持っているかなど自己紹介となります。' },
     ],
+    script: [
+      { type: 'text/javascript', src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', async: true},
+      { type: 'text/javascript', innerHTML: '(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-9693505561732401", enable_page_level_ads: true});' },
+    ],
   },
   data: () => ({
     nickname: 'なかむ🇭🇰Webデベロッパー',
