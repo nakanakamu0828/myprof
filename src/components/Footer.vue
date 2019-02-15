@@ -70,7 +70,7 @@
       </div>
       <p>
         <small>
-          Copyright © 2018.
+          © Nakamu 2019.
         </small>
       </p>
     </div>
